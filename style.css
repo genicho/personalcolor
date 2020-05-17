@@ -151,6 +151,14 @@ body {
     color: #35465d;
 }
 
+.title:hover {
+    font-family: NanumSquareR;
+    line-height: 1.4;
+    text-align: center;
+    color: #35465d;
+    underline: none;
+}
+
 .subtitle {
     font-family: NanumSquareR;
     font-size: 1.2rem;
