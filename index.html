@@ -16,18 +16,23 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5eb6a2a65d074ef5"></script>  
-    
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5eb6a2a65d074ef5"></script>
+
     <meta name="naver-site-verification" content="24db331c21f56e77e5c0a033751f4074c084b290" />
     <link rel="canonical" href="https://hongineerpersonalcolor.netlify.app">
     <meta name="robots" content="index,follow">
     <meta name="description" content="구글 인공지능(AI)를 이용해 자신의 퍼스널 컬러를 테스트 해 볼 수 있는 사이트입니다. 자신이 봄웜톰,여름쿨튼,가을웜톤,겨울쿨톤">
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="퍼스널 컬러 테스트">
+    <meta property="og:description" content="구글 인공지능(AI)를 이용해 자신의 퍼스널 컬러를 테스트 해 볼 수 있는 사이트입니다. 자신이 봄웜톰,여름쿨튼,가을웜톤,겨울쿨톤">
+    <meta property="og:url" content="https://hongineerpersonalcolor.netlify.app/">
+
 </head>
 
 <body>
 
- <!--   <nav class="navbar navbar-expand-lg navbar-light nav-distance">
+    <!--   <nav class="navbar navbar-expand-lg navbar-light nav-distance">
         <a class="navbar-brand" href="#">퍼스널 컬러 테스트</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -64,19 +69,16 @@
             </form>
         </div>
     </nav> -->
-      <section class="youtube">
+    <section class="youtube">
         <div class="container mt-3 youtube cover d-flex flex-row-reverse">
             <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="youtube-link">조코딩 유튜브 바로가기</a>
         </div>
     </section>
     <section class="section">
         <h1 class="title">퍼스널 컬러 테스트</h1>
-       <h2 class="container subtitle mt-3">by google AI</h2>
-        
-        
+        <h2 class="container subtitle mt-3">by google AI</h2>
 
     </section>
-  
 
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <div class="container file-upload">
@@ -85,17 +87,19 @@
             <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
             <div class="drag-text">
                 <img src="img/face_img.png" class="mt-4 pt-4 upload" style="width: 50%;">
-                <h3 class="pt-4 mb-3 pb-3 upload-text">얼굴 사진을 <br>올려주세요:)</h3>
+                <h3 class="pt-4 mb-3 pb-3 upload-text">얼굴 사진을
+                    <br>올려주세요:)</h3>
             </div>
         </div>
-        
+
         <div class="file-upload-content">
             <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-             <div id="loading" class="animated bounce">
-                 <div class="spinner-border" role="status">
-                 
-                 </div></div>
-            
+            <div id="loading" class="animated bounce">
+                <div class="spinner-border" role="status">
+
+                </div>
+            </div>
+
             <p class="result-message"></p>
             <div id="label-container" class="d-flex flex-column justify-content-around"></div>
             <div class="pt-5 image-title-wrap">
@@ -103,37 +107,29 @@
                     <span class="try-again-text">다른 사진으로 재시도</span>
                 </button>
             </div>
-                   <div class="addthis_inline_share_toolbox_sr3r mt-5"></div>
-            
-            
-            </div>
+            <div class="addthis_inline_share_toolbox_sr3r mt-5"></div>
+
         </div>
     </div>
-    <section class="ad-banner-section">
-    <div class="ad-banner">
-        
-    <ins class="kakao_ad_area" style="display:none;" 
- data-ad-unit    = "DAN-soen3wkncx0x" 
- data-ad-width   = "320" 
- data-ad-height  = "100"></ins> 
-<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-        
     </div>
+    <section class="ad-banner-section">
+        <div class="ad-banner">
+
+            <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-soen3wkncx0x" data-ad-width="320" data-ad-height="100"></ins>
+            <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+        </div>
     </section>
-    
+
     <footer class="footer pt-5 container d-flex justify-content-center">
         <div>
             <p>&copy; 홍지니어 Hongineer 2020. All Rights Reserved. </p>
         </div>
     </footer>
-    
+
     <div id="webcam-container"></div>
-    
-    
 
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    
- 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -142,8 +138,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-    <script type="text/javascript">  
-        
+    <script type="text/javascript">
         // More API functions here:
         // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
         // the link to your model provided by Teachable Machine export panel
@@ -234,8 +229,6 @@
                 var label = "<div class='ton_label d-flex align-items-center'>" + labelTitle + "</div>"
                 var bar = "<div class = 'bar-container position-relative container'><div class='" + predictionE[i].className + "-box'><div class = 'd-flex justify-content-center align-items-center " + predictionE[i].className + "-bar' style = 'width: " + barwidth + "' ><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
                 labelContainer.childNodes[i].innerHTML = label + bar;
-                
-            
             }
         }
     </script>
@@ -245,7 +238,7 @@
                 var reader = new FileReader();
                 reader.onload = function(e) {
                     $('.image-upload-wrap').hide();
-                     $('#loading').show();
+                    $('#loading').show();
                     $('.file-upload-image').attr('src', e.target.result);
                     $('.file-upload-content').show();
                     $('.image-title').html(input.files[0].name);
@@ -254,7 +247,7 @@
                 init().then(function() {
                     // console.log("hello");
                     predict();
-                     $('#loading').hide();
+                    $('#loading').hide();
                 });
             } else {
                 removeUpload();
